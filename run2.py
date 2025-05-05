@@ -100,7 +100,7 @@ def find_robots_and_keys(grid: list[list[str]]) -> (list[Robot], list[str]):
     return temp_robots, temp_keys
 
 
-def solve(grid):
+def min_steps_to_collect_all_keys(grid):
     opened_doors: list[str] = []
     all_steps = 0
 
@@ -125,7 +125,7 @@ def solve(grid):
 
 def main():
     data = get_input()
-    result = solve(data)
+    result = min_steps_to_collect_all_keys(data)
     print(result)
 
 
